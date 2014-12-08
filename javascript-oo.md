@@ -99,8 +99,10 @@ function Person(name,age,sex){
   this.name=name;
   this.age=age;
   this.sex=sex;
-}```
+} ```
+
 ####2.定义方法
+
 ```javascript
 function Person(name,age,sex){
   this.name=name;
