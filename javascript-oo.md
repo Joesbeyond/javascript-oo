@@ -99,11 +99,12 @@ function Person(name,age,sex){
   this.name=name;
   this.age=age;
   this.sex=sex;
-} ```
+}
+```
 
-#### 2.定义方法
+####2.定义方法
 
-```java
+```javascript
 
 function Person(name,age,sex){
   this.name=name;
@@ -115,13 +116,17 @@ Person.hello = function(){
 }
 Person.prototype.getName = function() {
   return this.name;
-}```
+}
+
+```
 
 ```javascript
 //实例方法
 var person = new Person('joes',20,'Male');
 var name = person.getName();
-console.log(name);```
+console.log(name);
+
+```
 
 ```javascript
 //类方法
