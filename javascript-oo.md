@@ -28,7 +28,6 @@
 #####2.继承
 
 可以具备某些已经存在的功能。
-
 <code><pre>
 function Person(name,age,sex){
 this.name=name;
@@ -88,7 +87,6 @@ List list=new ArrayList();
 ###四.JS中如何定义
 
 ####1.定义属性
-
 <code><pre>
 function Person(name,age,sex){
   this.name=name;
@@ -96,22 +94,23 @@ function Person(name,age,sex){
   this.sex=sex;
 }</pre></code>
 ####2.定义方法
-
 <code><pre>
-this.sex=sex;
-}name;
-this.age=a定
+function Person(name,age,sex){
+  this.name=name;
+  this.age=age;
+  this.sex=sex;
+}
 Person.hello = function(){
 return 'Hello World';
 }
 Person.prototype.getName = function() {
    return this.name;
 }
-//instance method
+//实例方法
 var person = new Person('joes',20,'Male');
 var name = person.getName();
 console.log(name);
-//class method
+//类方法
 var helloWorld = Person.hello();
 console.log(helloWorld);
 </pre></code>
